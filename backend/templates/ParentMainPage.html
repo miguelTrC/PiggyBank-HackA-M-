@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/ParentMainPage.css') }}" />
+</head>
+
+<body>
+    <div id="image_and_greeting">
+        <div id="piggyImage">
+            <img id="piggy" src="{{url_for('static', filename='/img/PiggyBank_bottom.png')}}" alt="Piggy Bank Logo">
+        </div>
+        <div id="greeting">
+            <h2>Welcome Back, {{username}}</h2>
+        </div>
+    </div>
+    <div id="balance">
+        <h1>Balance : ${{balance}}</h1>
+    </div>
+    <div id="last_deposit">
+        <h2>Last Deposit : ${{last_deposit}}</h2>
+    </div>
+    <form method="post">
+        <div id="form_row_1">
+            <div class="labelaw">
+                <label>
+                    <h2 style="font-size: 35px;">Deposit</h2>
+                </label>
+            </div>
+            <div class="inputaw">
+                <input type="text" name="adding" class="input" />
+            </div>
+            <div class="awbutton">
+                <button type="submit" class="button">
+                    <h1 class="sign" style="font-size: 150%;">Deposit</h1>
+                </button>
+            </div>
+        </div>
+        <div id="form_row_2">
+            <div class="labelaw">
+                <label>
+                    <h2 style="font-size: 35px;">Withdraw</h2>
+                </label>
+            </div>
+            <div class="inputaw">
+                <input type="text" name="withdraw" class="input" style="margin-left: -1.5rem;" />
+            </div>
+            <div class="awbutton">
+                <button type="submit" class="button">
+                    <h1 class="sign" style="font-size: 150%;">Withdraw</h1>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <div id="log_out_button">
+        <a href="{{url_for("authn.logout")}}"><button type="button" class="button">Logout</button></a>
+        <a href="{{url_for("authn.child_sign_Up")}}"><button type="button" class="button">Add children</button></a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;400&display=swap');
+
+:root {
+    --colour-one: #ffd1b7;
+    --colour-two: #fee4d4;
+    --colour-three: #fdb493;
+    --colour-four: #fb966f;
+    --colour-five: #f45f34;
+    --colour-six: #302825;
+    --colour-seven: #a69f9c;
+    --colour-eight: #707e8d;
+}
+
+body {
+    background: var(--colour-one);
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+#last_deposit {
+    justify-content: center;
+    display: flex;
+    margin-top: -2rem;
+    font-size: 130%;
+
+}
+
+#image_and_greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#piggyImage {
+    justify-content: center;
+}
+
+#piggy {
+    width: 90%;
+}
+
+#balance {
+    display: flex;
+    justify-content: center;
+    color: #302825;
+}
+
+#greeting {
+    font-size: 250%;
+    margin-left: 5rem;
+}
+
+.awbutton,
+.inputaw,
+.labelaw {
+    display: inline;
+    justify-content: center;
+}
+
+#log_out_button {
+    display: flex;
+    justify-content: center ;
+    margin-top: 50px;
+}
+
+.button {
+    background: var(--colour-six);
+    padding: 5px;
+    color: var(--colour-one);
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 100px;
+    height: fit-content;
+}
+
+.button .sign {
+    color: #fff;
+    font-size: 15px;
+}

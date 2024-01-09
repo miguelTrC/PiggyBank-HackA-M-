@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/ChildLogin.css') }}">
+    <title>Child Login</title>
+</head>
+
+<body>
+    <div class="login_form">
+        <div class="details">
+            <div class="welcome">Child Login</div>
+            <form method="post">
+                <div class="wrap">
+                    <label>Email</label>
+                    <input type="text" name="email" class="input" name="email" />
+                </div>
+                <div class="wrap">
+                    <label>Password</label>
+                    <input type="password" name="password" class="input" data-type="password" name="password" />
+                </div>
+                <button type="submit" class="button">
+                    <h1 class="sign">Sign in!</h1>
+                </button>
+            </form>
+        </div>
+        <div class="details-two">
+            <img class="piggy" src="{{url_for('static', filename='img/PiggyBank_2.png')}}" alt="piggy bank logo" id="piggyImage" />
+        </div>
+
+</body>
+
+</html>

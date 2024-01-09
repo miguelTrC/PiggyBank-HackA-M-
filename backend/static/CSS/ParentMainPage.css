@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@100;400&display=swap');
+
+:root {
+    --colour-one: #ffd1b7;
+    --colour-two: #fee4d4;
+    --colour-three: #fdb493;
+    --colour-four: #fb966f;
+    --colour-five: #f45f34;
+    --colour-six: #302825;
+    --colour-seven: #a69f9c;
+    --colour-eight: #707e8d;
+}
+
+body {
+    background: var(--colour-one);
+}
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1 {
+    font-size: 400%;
+}
+
+#last_deposit {
+    justify-content: center;
+    display: flex;
+    margin-top: -2rem;
+    font-size: 130%;
+
+}
+
+.login_form {
+    border-bottom: 3px solid var(--colour-four);
+    border-right: 3px solid var(--colour-four);
+    background: var(--colour-one);
+    height: 400px;
+    width: 700px;
+    box-shadow: 10px 10px 6px 2px rgba(251, 150, 111, 0.6);
+    overflow: hidden;
+}
+
+.input {
+    border: 6px solid var(--colour-three);
+    padding: 20px 20px;
+    margin: 5px;
+    border-radius: 15px;
+    background: none;
+    box-shadow: inset 10px 10px 6px -5px rgba(255, 209, 183, 1);
+    font-size: 30px;
+    text-align: center;
+}
+
+#image_and_greeting {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#piggy {
+    width : 90%;
+}
+
+#piggyImage {
+    justify-content: center;
+}
+
+#balance {
+    display: flex;
+    justify-content: center;
+    color: #302825;
+}
+
+#greeting {
+    font-size: 250%;
+    margin-left: 5rem;
+}
+
+.awbutton,
+.inputaw,
+.labelaw {
+    display: inline;
+    justify-content: center;
+}
+
+.awbutton {
+    margin-top: 0.8rem;
+}
+
+.inputaw {
+    margin-top: 0.4rem;
+}
+
+.button {
+    background: var(--colour-six);
+    padding: 5px;
+    color: var(--colour-one);
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 100px;
+    height: fit-content;
+}
+
+.button .sign {
+    color: #fff;
+    font-size: 15px;
+}
+
+label {
+    color: var(--colour-six);
+    display: inline-flex;
+}
+
+#form_row_2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    vertical-align: middle;
+}
+
+#form_row_1 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    vertical-align: middle;
+}
+
+#log_out_button {
+    display: flex;
+    justify-content: center ;
+    margin-top: 50px;
+}

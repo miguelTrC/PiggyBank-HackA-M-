@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Child Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/ChildMainPage.css') }}" />
+</head>
+
+<body>
+    <div id="image_and_greeting">
+        <div id="piggyImage">
+            <img id="piggy" src="{{url_for('static', filename='/img/PiggyBank_bottom.png')}}" alt="Piggy Bank logo" />
+        </div>
+        <div id="greeting">
+            <h2>Welcome Back, {{username}}</h2>
+        </div>
+    </div>
+    <div id="balance">
+        <h1>Balance : ${{balance}}</h1>
+    </div>
+    <div id="last_deposit" style="margin-top: 30px;">
+        <h2>Last Deposit : ${{last_deposit}}</h2>
+    </div>
+
+    <div id="log_out_button">
+        <a href="{{url_for("authn.logout")}}"><button type="button" class="button">Logout</button></a>
+    </div>
+
+</body>
+
+</html>

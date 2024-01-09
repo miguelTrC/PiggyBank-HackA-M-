@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> PgyBnk </title>
+    <style>
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      .center { 
+        text-align: center;
+        margin-top: 75px;
+      }
+      .button {
+        background-color: #F45F34;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: 20px auto;
+        border-radius: 50px;
+        font-size: 20px;
+        margin-top: 30px;
+        width:400px;
+        height:70px;
+        cursor:pointer;   
+      }
+
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/StartPage.css') }}" />
+  </head>
+  <body>
+    <img src="{{url_for('static', filename='img/PiggyBank_side.png')}}" style="display: block; margin: 0 auto;">
+    <h1 class="center">Pick an option to start saving!
+    </h1> 
+    <div class="center">  
+      <a style="text-decoration: none" href="{{url_for("authn.parentLogin")}}"> <button class="button">Parent Login</button></a>
+      <a style="text-decoration: none" href="{{url_for("authn.childrenLogin")}}"> <button class="button">Children Login</button></a>
+    </div>
+  </body>
+</html>

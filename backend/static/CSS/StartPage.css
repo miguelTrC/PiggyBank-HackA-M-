@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+:root {
+    --colour-one: #ffd1b7;
+    --colour-two: #fee4d4;
+    --colour-three: #fdb493;
+    --colour-four: #fb966f;
+    --colour-five: #f45f34;
+    --colour-six: #302825;
+    --colour-seven: #a69f9c;
+    --colour-eight: #707e8d;
+}
+
+body {
+
+    background: var(--colour-one);
+}
+
+.piggy {
+
+    filter: drop-shadow(2px 2px 1.75rem #fdb493);
+    margin: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    color: white;
+    background: #302825;
+    border-radius: 5px;
+    border: none;
+    margin: 5rem;
+}
+
+.piggyImage {
+    display: flex;
+    justify-content: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
